@@ -1,5 +1,5 @@
 <p align="center">
-  ![](typing_indicator.gif)
+  ![](https://github.com/nandiniparimi1107/react-native-typing-indicator/blob/master/typing_indicator.gif)
 </p>
 <h3 align="center">
    React Native Typing Indicator
@@ -42,7 +42,7 @@ class Example extends React.Component {
 
 ```jsx
 import React from "react";
-import { TypingAnimation } from 'react-native-typing-animation';
+import { TypingAnimation } from 'react-native-typing-indicator';
 
 class Example extends React.Component {
   render() {
@@ -59,9 +59,9 @@ class Example extends React.Component {
 
 ## Props
 
-* **`backgroundStyle`** _(Object)_ - Container styles; default is `{}`
-* **`dotStyle`** _(Object)_ - Dot style; default is `{}`
-* **`duration`** _(number)_ - Animation duration for each dot `{}`
+* **`backgroundStyle`** _(Object)_ -  Background style of the typing indicator (Optional)
+* **`dotStyle`** _(Object)_ - Style attribute for each dot in the typing indicator (Optional)
+* **`duration`** _(number)_ - Animation duration for each dot (Optional)
 
 ## License
 

@@ -1,5 +1,5 @@
 <p align="center">
-  ![](https://github.com/nandiniparimi1107/react-native-typing-indicator/blob/master/typing_indicator.gif)
+  <img src="typing_indicator.gif" alt="example" height="100"/>
 </p>
 <h3 align="center">
    React Native Typing Indicator

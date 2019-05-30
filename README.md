@@ -11,7 +11,7 @@
   <a title='License' href="https://github.com/watadarkstar/react-native-typing-animation/blob/master/LICENSE" height="18">
     <img src='https://img.shields.io/badge/license-MIT-blue.svg' />
   </a>
-  <a title='Tweet' href="https://twitter.com/intent/tweet?text=Check%20out%20this%20awesome%20React%20Native%20typing%20animation%20made%20with%20simple%20trigonometry&url=https://github.com/watadarkstar/react-native-typing-animation&via=icookandcode&hashtags=react,reactnative,opensource,github,ux" height="18">
+  <a title='Tweet' href="https://twitter.com/intent/tweet?text=Check%20out%20this%20awesome%20React%20Native%20typing%20indicator%20made%20with%20Animated%20library&url=https://github.com/nandiniparimi1107/react-native-typing-indicator" height="18">
     <img src='https://img.shields.io/twitter/url/http/shields.io.svg?style=social' />
   </a>
 </p>

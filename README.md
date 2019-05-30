@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="typing_indicator.gif" alt="example" height="100"/>
+  <img src="typing_indicator.gif" alt="example" height="50"/>
 </p>
 <h3 align="center">
    React Native Typing Indicator

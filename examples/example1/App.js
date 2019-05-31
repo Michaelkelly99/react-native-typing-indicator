@@ -5,7 +5,7 @@
 
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
-import TypingIndicator from 'react-native-typing-indicator';
+import {TypingIndicator} from 'react-native-typing-indicator';
 
 export default class App extends Component {
   render() {

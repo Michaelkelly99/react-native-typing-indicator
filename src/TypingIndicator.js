@@ -6,7 +6,7 @@ const kFinalOpacity = 1;
 const kAnimationDuration = 500;
 
 
-export default class TypingIndicator extends React.Component {
+class TypingIndicator extends React.Component {
   fadeDotAnim1 = new Animated.Value(kBaseOpacity); // Initial value for opacity: 0.5
   fadeDotAnim2 = new Animated.Value(kBaseOpacity);
   fadeDotAnim3 = new Animated.Value(kBaseOpacity);
@@ -131,3 +131,5 @@ const styles = StyleSheet.create({
     marginTop: 11,
   },
 });
+
+export default TypingIndicator;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Animated, StyleSheet, View } from 'react-native';
 
@@ -92,15 +93,15 @@ class TypingIndicator extends React.Component {
 }
 
 TypingIndicator.defaultProps = {
-  duration?: 500,
-  dotStyle?: {},
-  backgroundStyle?: {}
+  duration: 500,
+  dotStyle: {},
+  backgroundStyle: {}
 };
 
 TypingIndicator.propTypes = {
-  duration?: PropTypes.number,
-  dotStyle?: PropTypes.object,
-  backgroundStyle?: PropTypes.object
+  duration: PropTypes.number,
+  dotStyle: PropTypes.object,
+  backgroundStyle: PropTypes.object
 };
 
 const styles = StyleSheet.create({

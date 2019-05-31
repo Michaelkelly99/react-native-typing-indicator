@@ -15,9 +15,11 @@
     "@babel/runtime": "^7.4.5",
     "babel-jest": "^24.8.0",
     "jest": "^24.8.0",
-    "react-native-reanimated": "1.0.0",
     "metro-react-native-babel-preset": "^0.54.1",
+    "prop-types": "^15.6.2",
+    "react-native-reanimated": "1.0.0",
     "react-test-renderer": "16.8.3"
+    
   },
   "jest": {
     "preset": "react-native"

@@ -1,1 +1,1 @@
-export { default as TypingIndicator } from './src/';
+export { TypingIndicator } from './src/TypingIndicator';

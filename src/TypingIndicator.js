@@ -5,20 +5,20 @@ const kBaseOpacity = 0.5;
 const kFinalOpacity = 1;
 const kAnimationDuration = 500;
 
-interface IProps{
-  duration?:number,
-  dotStyle?: StyleProp<ViewStyle>,
-  backgroundStyle?: StyleProp<ViewStyle>
+interface IProps {
+  duration?: number;
+  dotStyle?: StyleProp<ViewStyle>;
+  backgroundStyle?: StyleProp<ViewStyle>;
 }
 
-export class TypingIndicator extends React.Component<IProps> {
-  private fadeDotAnim1 = new Animated.Value(kBaseOpacity); // Initial value for opacity: 0.5
-  private fadeDotAnim2 = new Animated.Value(kBaseOpacity);
-  private fadeDotAnim3 = new Animated.Value(kBaseOpacity);
-  private animationDuration = kAnimationDuration;
-  constructor(props:IProps){
+export default class TypingIndicator extends React.Component<IProps> {
+  fadeDotAnim1 = new Animated.Value(kBaseOpacity); // Initial value for opacity: 0.5
+  fadeDotAnim2 = new Animated.Value(kBaseOpacity);
+  fadeDotAnim3 = new Animated.Value(kBaseOpacity);
+  animationDuration = kAnimationDuration;
+  constructor(props: IProps) {
     super(props);
-    if(this.props.duration){
+    if (this.props.duration) {
       this.animationDuration = this.props.duration;
     }
   }
@@ -48,7 +48,10 @@ export class TypingIndicator extends React.Component<IProps> {
   runAnimation() {
     Animated.parallel([
       this.dotAnimation(this.fadeDotAnim1),
-      Animated.sequence([Animated.delay(this.animationDuration), this.dotAnimation(this.fadeDotAnim2)]),
+      Animated.sequence([
+        Animated.delay(this.animationDuration),
+        this.dotAnimation(this.fadeDotAnim2),
+      ]),
       Animated.sequence([
         Animated.delay(this.animationDuration * 1.5),
         this.dotAnimation(this.fadeDotAnim3),
@@ -94,7 +97,7 @@ export class TypingIndicator extends React.Component<IProps> {
 }
 const styles = StyleSheet.create({
   background: {
-    backgroundColor:'white',
+    backgroundColor: 'white',
     alignSelf: 'baseline',
     borderBottomLeftRadius: 0,
     borderBottomRightRadius: 15,

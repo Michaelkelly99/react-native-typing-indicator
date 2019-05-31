@@ -1,22 +1,17 @@
 import React from 'react';
-import { Animated, StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
+import { Animated, StyleSheet, View } from 'react-native';
 
 const kBaseOpacity = 0.5;
 const kFinalOpacity = 1;
 const kAnimationDuration = 500;
 
-interface IProps {
-  duration?: number;
-  dotStyle?: StyleProp<ViewStyle>;
-  backgroundStyle?: StyleProp<ViewStyle>;
-}
 
-export default class TypingIndicator extends React.Component<IProps> {
+export default class TypingIndicator extends React.Component {
   fadeDotAnim1 = new Animated.Value(kBaseOpacity); // Initial value for opacity: 0.5
   fadeDotAnim2 = new Animated.Value(kBaseOpacity);
   fadeDotAnim3 = new Animated.Value(kBaseOpacity);
   animationDuration = kAnimationDuration;
-  constructor(props: IProps) {
+  constructor(props) {
     super(props);
     if (this.props.duration) {
       this.animationDuration = this.props.duration;
@@ -95,6 +90,19 @@ export default class TypingIndicator extends React.Component<IProps> {
     );
   }
 }
+
+TypingIndicator.defaultProps = {
+  duration?: 500,
+  dotStyle?: {},
+  backgroundStyle?: {}
+};
+
+TypingIndicator.propTypes = {
+  duration?: PropTypes.number,
+  dotStyle?: PropTypes.object,
+  backgroundStyle?: PropTypes.object
+};
+
 const styles = StyleSheet.create({
   background: {
     backgroundColor: 'white',

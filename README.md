@@ -8,6 +8,9 @@
   A customizable animated typing indicator created using <br/> pure react native <a href="https://facebook.github.io/react-native/docs/animated">Animated</a> library. 
 </p>
 <p align="center">
+  <a href="https://www.npmjs.com/package/react-native-typing-indicator">
+    <img alt="npm version" src="https://badge.fury.io/js/react-native-typing-indicator.svg"/>
+  </a>
   <a title='License' href="https://github.com/watadarkstar/react-native-typing-animation/blob/master/LICENSE" height="18">
     <img src='https://img.shields.io/badge/license-MIT-blue.svg' />
   </a>
@@ -21,6 +24,11 @@
 * Completely Customizable
 * No external dependencies
 * Fast, lightweight and no images
+
+## Installation
+
+* Using [npm](https://www.npmjs.com/#getting-started): `npm install react-native-typing-indicator --save`
+* Using [Yarn](https://yarnpkg.com/): `yarn add react-native-typing-indicator`
 
 
 ## Example

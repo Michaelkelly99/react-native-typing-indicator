@@ -1,5 +1,6 @@
 {
   "name": "react-native-typing-indicator",
+  "description": "React native typing indicator using react-native-reanimated library",
   "version": "0.0.4",
   "main": "index.js",
   "repository": {
